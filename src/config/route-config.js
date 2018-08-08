@@ -4,5 +4,7 @@ module.exports = {
     app.use(staticRoutes);
     const marcoRoute = require("../routes/marco");
     app.use(marcoRoute);
+    const aboutRoute = require("../routes/about");
+    app.use(aboutRoute);
   }
 }
