@@ -4,10 +4,12 @@ module.exports = {
     const marcoRoute = require("../routes/marco");
     const aboutRoute = require("../routes/about");
     const topicRoutes = require("../routes/topics");
+    const postRoutes = require("../routes/posts");
 
     app.use(marcoRoute);
     app.use(staticRoutes);
     app.use(aboutRoute);
     app.use(topicRoutes);
+    app.use(postRoutes);
   }
 }
