@@ -36,7 +36,7 @@ describe("Flair", () => {
 
   describe("#addFlair()", () => {
 
-    it("should create a flair with name and color attributes that is associated with a post"), () => {
+    it("should create a flair with name and color attributes that is associated with a post", (done) => {
       Flair.addFlair({
         name: "The Golden Post",
         color: "gold",
@@ -52,7 +52,7 @@ describe("Flair", () => {
         console.log(err);
         done();
       });
-    }
+    })
   });
 
 });
